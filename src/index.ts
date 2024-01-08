@@ -9,7 +9,7 @@ import taskRouter from "./routes/tasks";
 const app = express();
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({ origin: "https://tasks-by-aarav.netlify.app" }));
 
 const PORT = process.env.PORT || 5000;
 
